@@ -1,30 +1,27 @@
 // variable
-// let a: string | number;
-let a: string; // : means types bole deya
+
+let a: any;
+
+a = 5;
+a = "nahid";
 
 // array
 
-// let b: string[] = [];
+let b: any[] = [];
 
-// // b.push(3); //it will give error
-// b.push("nahid");
-
-let b: (string | number)[] = [];
-
-b.push("nahid", 5);
-console.log(b);
+a.push("nahid");
+a.push(25);
 
 // object
 
-let c: object;
+let c: {
+  name: any;
+  age: any;
+};
 
 c = {
-  name: "nahid", // whatever object we want to put it won't give error
+  name: 23,
+  age: "nahid",
 };
 
-// if we want to specify this object
-
-let d: {
-  name: string;
-  age: number;
-};
+// khub besi problem e na porle eita use kora thik na
