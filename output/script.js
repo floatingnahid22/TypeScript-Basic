@@ -1,15 +1,16 @@
 "use strict";
-// let add: (x: number, y: number) => number;
-// add = (a: number, b: number) => {
-//   return a + b;
-// };
-let calculation;
-calculation = (a, b, c) => {
-    if (c === "add") {
-        return a + b;
+class Player {
+    constructor(n, a, c) {
+        this.name = n;
+        this.age = a;
+        this.country = c;
     }
-    else {
-        return a - b;
+    play() {
+        console.log(`${this.name} from ${this.country} is playing`);
     }
-};
-console.log(calculation(5, 6, "minus"));
+}
+const masrafee = new Player("Masrafee", 35, "Bangladesh");
+const sakib = new Player("Sakib", 33, "Bangladesh");
+const players = [];
+players.push(masrafee);
+players.push(sakib);
