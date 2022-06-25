@@ -1,12 +1,30 @@
 import { Player } from "./classes/Player.js";
+import { IsPlayer } from "./interfaces/IsPlayer.js";
 
-const masrafee = new Player("Masrafee", 35, "Bangladesh");
-const sakib = new Player("Sakib", 33, "Bangladesh");
+let masrafee: IsPlayer;
+masrafee = new Player("Masrafee", 35, "Bangladesh");
 
-console.log(sakib.age);
-console.log(sakib.country);
+let sakib: IsPlayer;
+sakib = new Player("Sakib", 33, "Bangladesh");
 
-const players: Player[] = [];
+const players: IsPlayer[] = [];
 
 players.push(masrafee);
 players.push(sakib);
+
+// interface RectangleOptions {
+//   width: number;
+//   length: number;
+// }
+
+// function drawRectangle(options: RectangleOptions) {
+//   let width = options.width;
+//   let length = options.length;
+// }
+
+// let threeDOptions = {
+//   width: 20,
+//   length: 10,
+//   height: 10,
+// };
+// drawRectangle(threeDOptions);
