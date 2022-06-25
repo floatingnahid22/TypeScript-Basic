@@ -1,27 +1,12 @@
-// variable
+// let myFunc: Function;
 
-let a: any;
+// myFunc = () => {
+//   console.log("hello");
+// };
 
-a = 5;
-a = "nahid";
-
-// array
-
-let b: any[] = [];
-
-a.push("nahid");
-a.push(25);
-
-// object
-
-let c: {
-  name: any;
-  age: any;
+const myFunc = (a: string, b: string, c: string = "true") => {
+  console.log(c);
+  console.log(`Hello ${a}  ${b}`);
 };
 
-c = {
-  name: 23,
-  age: "nahid",
-};
-
-// khub besi problem e na porle eita use kora thik na
+myFunc("A", "B");
