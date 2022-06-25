@@ -1,12 +1,10 @@
-// let myFunc: Function;
+type strOrNum = string | number;
+type userType = { name: string; age: number };
 
-// myFunc = () => {
-//   console.log("hello");
-// };
-
-const myFunc = (a: string, b: string, c: string = "true") => {
-  console.log(c);
-  console.log(`Hello ${a}  ${b}`);
+const userDetails = (id: strOrNum, user: userType) => {
+  console.log(`user id is ${id}, name is ${user.name} and age is ${user.age}`);
 };
 
-myFunc("A", "B");
+const sayHello = (user: userType) => {
+  console.log(`Hello ${user.age > 50 ? "Sir" : "Mr."} ${user.name}`);
+};
