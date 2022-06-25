@@ -1,10 +1,33 @@
-type strOrNum = string | number;
-type userType = { name: string; age: number };
+// let add: (x: number, y: number) => number;
 
-const userDetails = (id: strOrNum, user: userType) => {
-  console.log(`user id is ${id}, name is ${user.name} and age is ${user.age}`);
-};
+// add = (a: number, b: number) => {
+//   return a + b;
+// };
 
-const sayHello = (user: userType) => {
-  console.log(`Hello ${user.age > 50 ? "Sir" : "Mr."} ${user.name}`);
-};
+// let calculation: (x: number, y: number, z: string) => number;
+
+// calculation = (a: number, b: number, c: string) => {
+//   if (c === "add") {
+//     return a + b;
+//   } else {
+//     return a - b;
+//   }
+// };
+
+// console.log(calculation(5, 6, "minus"));
+
+let userDetails: (
+  id: number | string,
+  userInfo: {
+    name: string;
+    age: number;
+  }
+) => void;
+
+userDetails = (
+  id: number | string,
+  user: {
+    name: string;
+    age: number;
+  }
+) => {};
